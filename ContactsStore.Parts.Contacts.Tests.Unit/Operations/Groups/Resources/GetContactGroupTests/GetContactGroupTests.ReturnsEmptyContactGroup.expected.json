@@ -1,0 +1,6 @@
+﻿{
+  "$type": "ContactsStore.Models.Groups.ContactGroupDto, ContactsStore.Parts.Contacts",
+  "Name": "unit test group",
+  "Description": "unit test group description",
+  "Contacts": []
+}

@@ -1,0 +1,8 @@
+﻿{
+  "$type": "ContactsStore.Entities.ContactGroup, ContactsStore.Parts.Contacts",
+  "OwnerId": 1,
+  "ContactGroupId": 1,
+  "Name": "unit test group",
+  "Description": "unit test group description",
+  "Contacts": []
+}

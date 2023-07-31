@@ -1,0 +1,20 @@
+﻿{
+  "user": {
+    "email": "user@example.com",
+    "person": {
+      "name": "Test",
+      "surname": "User",
+      "phoneNumbers": [
+        {
+          "number": "123123123123"
+        }
+      ],
+      "emailAddresses": [
+        {
+          "address": "user@example.com"
+        }
+      ]
+    }
+  },
+  "password": "gentlePassword"
+}

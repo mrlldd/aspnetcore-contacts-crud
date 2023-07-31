@@ -1,0 +1,47 @@
+{
+	"name": "contactsstore",
+	"version": "1.0.0",
+	"description": "Contacts Store Web API",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mrlldd/aspnet-contacts-crud.git"
+	},
+	"author": "mrlldd",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/mrlldd/aspnet-contacts-crud/issues"
+	},
+	"homepage": "https://github.com/mrlldd/aspnet-contacts-crud#readme",
+	"private": true,
+	"scripts": {
+		"preinstall": "dotnet tool restore && dotnet restore -f",
+		"postinstall": "husky install",
+		"hooks:pre-commit": "lint-staged -r",
+		"format-all": "npm run format:cs && npm run format:other",
+		"format:cs": "dotnet format whitespace ContactsStore.sln",
+		"format:other": "prettier . --write -u",
+		"hooks:pre-push": "npm run test",
+		"test": "dotnet test -c Release",
+		"build:apiclient": "cd ContactsStore.Tests.Integration && nswag run .nswag"
+	},
+	"engineStrict": true,
+	"engines": {
+		"yarn": ">=1.22"
+	},
+	"prettier": {
+		"semi": true,
+		"printWidth": 120,
+		"singleQuote": true,
+		"bracketSpacing": true,
+		"useTabs": true
+	},
+	"devDependencies": {
+		"glob": "^10.3.3",
+		"husky": "^8.0.2",
+		"lint-staged": "^13.1.0",
+		"nswag": "^13.18.2",
+		"prettier": "^2.8.1",
+		"replace": "^1.2.2"
+	}
+}

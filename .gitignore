@@ -1,0 +1,6 @@
+﻿obj/
+bin/
+node_modules
+.idea
+*.DotSettings.user
+*.sln.DotSettings

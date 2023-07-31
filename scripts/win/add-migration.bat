@@ -1,0 +1,1 @@
+dotnet ef migrations add %1 --project .\..\..\ContactsStore.Dependencies.Database.Migrations\ContactsStore.Dependencies.Database.Migrations.csproj --startup-project .\..\..\ContactsStore.Application\ContactsStore.Application.csproj

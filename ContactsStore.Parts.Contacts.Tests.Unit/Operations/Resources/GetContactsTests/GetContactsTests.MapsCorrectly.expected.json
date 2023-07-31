@@ -1,0 +1,52 @@
+﻿{
+  "$type": "ContactsStore.Utilities.Paging.PagedResult`1[[ContactsStore.Models.ContactDto, ContactsStore.Parts.Contacts]], ContactsStore.Dependencies.Database",
+  "Items": [
+    {
+      "$type": "ContactsStore.Models.ContactDto, ContactsStore.Parts.Contacts",
+      "ContactId": 3,
+      "Description": "unit test contact",
+      "Person": {
+        "$type": "ContactsStore.Models.PersonDto, ContactsStore.Parts.User",
+        "PersonId": 3,
+        "Name": "unit",
+        "Surname": "test",
+        "PhoneNumbers": [
+          {
+            "$type": "ContactsStore.Models.PhoneNumberDto, ContactsStore.Parts.User",
+            "PhoneNumberId": 2,
+            "Number": "123123123"
+          },
+          {
+            "$type": "ContactsStore.Models.PhoneNumberDto, ContactsStore.Parts.User",
+            "PhoneNumberId": 3,
+            "Number": "456456456"
+          },
+          {
+            "$type": "ContactsStore.Models.PhoneNumberDto, ContactsStore.Parts.User",
+            "PhoneNumberId": 4,
+            "Number": "789789789"
+          }
+        ],
+        "EmailAddresses": [
+          {
+            "$type": "ContactsStore.Models.EmailAddressDto, ContactsStore.Parts.User",
+            "EmailAddressId": 2,
+            "Address": "user@example.com"
+          },
+          {
+            "$type": "ContactsStore.Models.EmailAddressDto, ContactsStore.Parts.User",
+            "EmailAddressId": 3,
+            "Address": "user2@example.com"
+          },
+          {
+            "$type": "ContactsStore.Models.EmailAddressDto, ContactsStore.Parts.User",
+            "EmailAddressId": 4,
+            "Address": "user3@example.com"
+          }
+        ]
+      }
+    }
+  ],
+  "Size": 1,
+  "Total": 1
+}

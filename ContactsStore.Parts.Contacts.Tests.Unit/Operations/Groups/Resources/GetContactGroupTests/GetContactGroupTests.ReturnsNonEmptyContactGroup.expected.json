@@ -1,0 +1,32 @@
+﻿{
+  "$type": "ContactsStore.Models.Groups.ContactGroupDto, ContactsStore.Parts.Contacts",
+  "Name": "unit test group",
+  "Description": "unit test group description",
+  "Contacts": [
+    {
+      "$type": "ContactsStore.Models.Groups.ContactGroupItemDto, ContactsStore.Parts.Contacts",
+      "PersonId": 3,
+      "Description": "unit test contact",
+      "Person": {
+        "$type": "ContactsStore.Models.PersonDto, ContactsStore.Parts.User",
+        "PersonId": 3,
+        "Name": "unit",
+        "Surname": "test",
+        "PhoneNumbers": [
+          {
+            "$type": "ContactsStore.Models.PhoneNumberDto, ContactsStore.Parts.User",
+            "PhoneNumberId": 2,
+            "Number": "123123123"
+          }
+        ],
+        "EmailAddresses": [
+          {
+            "$type": "ContactsStore.Models.EmailAddressDto, ContactsStore.Parts.User",
+            "EmailAddressId": 2,
+            "Address": "user@example.com"
+          }
+        ]
+      }
+    }
+  ]
+}

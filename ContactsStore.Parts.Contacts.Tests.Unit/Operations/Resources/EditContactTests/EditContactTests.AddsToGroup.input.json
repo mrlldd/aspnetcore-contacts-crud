@@ -1,0 +1,22 @@
+﻿{
+  "description": "edited unit test contact",
+  "contactId": 3,
+  "groupId": 1,
+  "person": {
+    "personId": 3,
+    "name": "unit",
+    "surname": "test",
+    "phoneNumbers": [
+      {
+        "phoneNumberId": 2,
+        "number": "123123123"
+      }
+    ],
+    "emailAddresses": [
+      {
+        "emailAddressId": 2,
+        "address": "user@example.com"
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "$type": "ContactsStore.Utilities.Paging.PagedResult`1[[ContactsStore.Models.ContactDto, ContactsStore.Parts.Contacts]], ContactsStore.Dependencies.Database",
+  "Items": [],
+  "Size": 1
+}

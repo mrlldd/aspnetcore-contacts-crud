@@ -1,0 +1,12 @@
+﻿{
+  "$type": "ContactsStore.Utilities.Paging.PagedResult`1[[ContactsStore.Models.Groups.ShortContactGroupDto, ContactsStore.Parts.Contacts]], ContactsStore.Dependencies.Database",
+  "Items": [
+    {
+      "$type": "ContactsStore.Models.Groups.ShortContactGroupDto, ContactsStore.Parts.Contacts",
+      "ContactGroupId": 1,
+      "Name": "unit test group"
+    }
+  ],
+  "Size": 1,
+  "Total": 1
+}

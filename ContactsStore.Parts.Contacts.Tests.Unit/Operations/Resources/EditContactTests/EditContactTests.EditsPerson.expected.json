@@ -1,0 +1,14 @@
+﻿{
+  "$type": "ContactsStore.Entities.Contact, ContactsStore.Parts.Contacts",
+  "OwnerId": 1,
+  "Person": {
+    "$type": "ContactsStore.Entities.Information.Person, ContactsStore.Dependencies.Database",
+    "PersonId": 3,
+    "Name": "edited unit person name",
+    "Surname": "edited test person surname",
+    "PhoneNumbers": [],
+    "EmailAddresses": []
+  },
+  "PersonId": 3,
+  "Description": "unit test contact"
+}

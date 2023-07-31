@@ -1,0 +1,29 @@
+﻿{
+  "description": "unit test contact",
+  "person": {
+    "name": "unit",
+    "surname": "test",
+    "phoneNumbers": [
+      {
+        "number": "123123123"
+      },
+      {
+        "number": "456456456"
+      },
+      {
+        "number": "789789789"
+      }
+    ],
+    "emailAddresses": [
+      {
+        "address": "user@example.com"
+      },
+      {
+        "address": "user2@example.com"
+      },
+      {
+        "address": "user3@example.com"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+﻿{
+  "$type": "ContactsStore.Entities.ContactGroup, ContactsStore.Parts.Contacts",
+  "OwnerId": 1,
+  "ContactGroupId": 1,
+  "Name": "unit test group",
+  "Description": "unit test group description",
+  "Contacts": [
+    {
+      "$type": "ContactsStore.Entities.Contact, ContactsStore.Parts.Contacts",
+      "OwnerId": 1,
+      "PersonId": 3,
+      "Description": "unit test contact",
+      "GroupId": 1
+    }
+  ]
+}

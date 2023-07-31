@@ -1,0 +1,106 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <RootNamespace>ContactsStore.Tests</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.3" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="coverlet.collector" Version="6.0.0">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ContactsStore.Dependencies.Database.Tests.Unit\ContactsStore.Dependencies.Database.Tests.Unit.csproj" />
+      <ProjectReference Include="..\ContactsStore.Parts.Contacts\ContactsStore.Parts.Contacts.csproj" />
+      <ProjectReference Include="..\ContactsStore.Parts.User.Tests.Unit\ContactsStore.Parts.User.Tests.Unit.csproj" />
+      <ProjectReference Include="..\ContactsStore.Tests.Unit\ContactsStore.Tests.Unit.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Operations\Groups\Resources\CreateContactGroupTests\CreateContactGroupTests.CreatesGroup.expected.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\CreateContactGroupTests\CreateContactGroupTests.CreatesGroup.input.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\DeleteContactGroupTests\DeleteContactGroupTests.DeletesContactGroup.expected.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\DeleteContactGroupTests\DeleteContactGroupTests.group.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\EditContactGroupTests\EditContactGroupTests.EditsGroup.expected.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\EditContactGroupTests\EditContactGroupTests.EditsGroup.input.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\EditContactGroupTests\EditContactGroupTests.group.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\RemoveContactFromGroupTests\RemoveContactFromGroupTests.RemovesContactFromGroup.expected.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\RemoveContactFromGroupTests\RemoveContactFromGroupTests.RemovesContactFromGroup.input.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\RemoveContactFromGroupTests\RemoveContactFromGroupTests.contact.json" />
+      <EmbeddedResource Include="Operations\Resources\CreateContactTests\CreateContactTests.CreatesContact.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\CreateContactTests\CreateContactTests.CreatesContact.input.json" />
+      <EmbeddedResource Include="Operations\Resources\CreateContactTests\CreateContactTests.CreatesGroupedContact.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\CreateContactTests\CreateContactTests.CreatesGroupedContact.group.json" />
+      <EmbeddedResource Include="Operations\Resources\CreateContactTests\CreateContactTests.CreatesGroupedContact.input.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.contact.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.EditsPerson.input.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.EditsPerson.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.EditsContact.input.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.EditsContact.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.AddsPhoneNumbers.input.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.AddsPhoneNumbers.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.RemovesPhoneNumbers.input.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.RemovesPhoneNumbers.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.AddsEmailAddresses.input.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.AddsEmailAddresses.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.RemovesEmailAddresses.input.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.RemovesEmailAddresses.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\GetContactsTests\GetContactsTests.MapsCorrectly.input.json" />
+      <EmbeddedResource Include="Operations\Resources\GetContactsTests\GetContactsTests.MapsCorrectly.expected.json" />
+      <None Remove="Operations\Resources\DeleteContactTests\DeleteContactTests.DeletesContact.input.json" />
+      <EmbeddedResource Include="Operations\Resources\DeleteContactTests\DeleteContactTests.contact.json" />
+      <None Remove="Operations\Resources\DeleteContactTests\DeleteContactTests.DeletesContact.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\DeleteContactTests\DeleteContactTests.DeletesContact.expected.json" />
+      <None Remove="Operations\Resources\DeleteContactTests\DeleteContactTests.DontReturnDeletedContacts.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\DeleteContactTests\DeleteContactTests.DontReturnDeletedContacts.expected.json" />
+      <None Remove="Operations\Resources\EditContactTests\EditContactTests.AddsToGroup.input.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.AddsToGroup.input.json" />
+      <None Remove="Operations\Resources\EditContactTests\EditContactTests.group.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.group.json" />
+      <None Remove="Operations\Resources\EditContactTests\EditContactTests.AddsToGroup.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.AddsToGroup.expected.json" />
+      <None Remove="Operations\Resources\EditContactTests\EditContactTests.RemovesFromGroup.input.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.RemovesFromGroup.input.json" />
+      <None Remove="Operations\Resources\EditContactTests\EditContactTests.RemovesFromGroup.expected.json" />
+      <EmbeddedResource Include="Operations\Resources\EditContactTests\EditContactTests.RemovesFromGroup.expected.json" />
+      <None Remove="Operations\Groups\Resources\CreateContactGroupTests.CreatesGroup.input.json" />
+      <None Remove="Operations\Groups\Resources\CreateContactGroupTests.CreatesGroup.expected.json" />
+      <None Remove="Operations\Groups\Resources\EditContactGroupTests.group.json" />
+      <None Remove="Operations\Groups\Resources\DeleteContactGroupTests.group.json" />
+      <None Remove="Operations\Groups\Resources\DeleteContactGroupTests.DeletesContactGroup.expected.json" />
+      <None Remove="Operations\Groups\Resources\DeleteContactGroupTests\DeleteContactGroupTests.DontReturnDeletedContactGroups.expected.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\DeleteContactGroupTests\DeleteContactGroupTests.DontReturnDeletedContactGroups.expected.json" />
+      <None Remove="Operations\Groups\Resources\GetContactGroupsTests\GetContactGroupsTests.MapsCorrectly.input.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\GetContactGroupsTests\GetContactGroupsTests.MapsCorrectly.input.json" />
+      <None Remove="Operations\Groups\Resources\GetContactGroupsTests\GetContactGroupsTests.MapsCorrectly.expected.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\GetContactGroupsTests\GetContactGroupsTests.MapsCorrectly.expected.json" />
+      <None Remove="Operations\Groups\Resources\GetContactGroupTests\GetContactGroupTests.group.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\GetContactGroupTests\GetContactGroupTests.group.json" />
+      <None Remove="Operations\Groups\Resources\GetContactGroupTests\GetContactGroupTests.ReturnsEmptyContactGroup.expected.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\GetContactGroupTests\GetContactGroupTests.ReturnsEmptyContactGroup.expected.json" />
+      <None Remove="Operations\Groups\Resources\GetContactGroupTests\GetContactGroupTests.ReturnsNonEmptyContactGroup.contact.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\GetContactGroupTests\GetContactGroupTests.ReturnsNonEmptyContactGroup.contact.json" />
+      <None Remove="Operations\Groups\Resources\GetContactGroupTests\GetContactGroupTests.ReturnsNonEmptyContactGroup.expected.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\GetContactGroupTests\GetContactGroupTests.ReturnsNonEmptyContactGroup.expected.json" />
+      <None Remove="Operations\Groups\Resources\AddContactToGroupTests\AddContactToGroupTests.contact.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\AddContactToGroupTests\AddContactToGroupTests.contact.json" />
+      <None Remove="Operations\Groups\Resources\AddContactToGroupTests\AddContactToGroupTests.AddsContactToGroup.input.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\AddContactToGroupTests\AddContactToGroupTests.AddsContactToGroup.input.json" />
+      <None Remove="Operations\Groups\Resources\AddContactToGroupTests\AddContactToGroupTests.AddsContactToGroup.expected.json" />
+      <EmbeddedResource Include="Operations\Groups\Resources\AddContactToGroupTests\AddContactToGroupTests.AddsContactToGroup.expected.json" />
+    </ItemGroup>
+
+</Project>

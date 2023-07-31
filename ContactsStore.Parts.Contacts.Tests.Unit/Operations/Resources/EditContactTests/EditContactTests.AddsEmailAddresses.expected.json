@@ -1,0 +1,27 @@
+﻿{
+  "$type": "ContactsStore.Entities.Contact, ContactsStore.Parts.Contacts",
+  "OwnerId": 1,
+  "Person": {
+    "$type": "ContactsStore.Entities.Information.Person, ContactsStore.Dependencies.Database",
+    "PersonId": 3,
+    "Name": "unit",
+    "Surname": "test",
+    "PhoneNumbers": [],
+    "EmailAddresses": [
+      {
+        "$type": "ContactsStore.Entities.Information.EmailAddress, ContactsStore.Dependencies.Database",
+        "EmailAddressId": 2,
+        "OwnerId": 3,
+        "Address": "user@example.com"
+      },
+      {
+        "$type": "ContactsStore.Entities.Information.EmailAddress, ContactsStore.Dependencies.Database",
+        "EmailAddressId": 3,
+        "OwnerId": 3,
+        "Address": "anothermail@example.com"
+      }
+    ]
+  },
+  "PersonId": 3,
+  "Description": "unit test contact"
+}

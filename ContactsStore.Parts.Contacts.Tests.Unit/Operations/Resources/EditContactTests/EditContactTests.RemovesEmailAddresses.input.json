@@ -1,0 +1,16 @@
+﻿{
+  "description": "unit test contact",
+  "contactId": 3,
+  "person": {
+    "personId": 3,
+    "name": "unit",
+    "surname": "test",
+    "phoneNumbers": [
+      {
+        "phoneNumberId": 2,
+        "number": "123123123"
+      }
+    ],
+    "emailAddresses": []
+  }
+}
